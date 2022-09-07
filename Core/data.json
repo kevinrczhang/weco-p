@@ -1,0 +1,313 @@
+[
+{
+    "model": "accounts.userprofileinfo",
+    "pk": 1,
+    "fields": {
+        "password": "argon2$argon2i$v=19$m=512,t=2,p=2$ZXdsYWduaU9NMm1l$zDJntchuABQrfq5932mZEQ",
+        "last_login": null,
+        "email": "mmeknoll@gmail.com",
+        "username": "Dragollax",
+        "real_name": "Cool User",
+        "biography": "bio",
+        "is_admin": false,
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "profile_image": "",
+        "interests": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.userprofileinfo",
+    "pk": 2,
+    "fields": {
+        "password": "argon2$argon2i$v=19$m=512,t=2,p=2$ODVPZEpjOFVUSnZQ$OqyjBuibHWf4xG3RqG6Tew",
+        "last_login": null,
+        "email": "django@gmail.com",
+        "username": "Django",
+        "real_name": "kevin",
+        "biography": "bio",
+        "is_admin": false,
+        "is_active": false,
+        "is_staff": false,
+        "is_superuser": false,
+        "profile_image": "",
+        "interests": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.userprofileinfo",
+    "pk": 3,
+    "fields": {
+        "password": "argon2$argon2i$v=19$m=512,t=2,p=2$aUNvYTNhM3c1N1lt$dbkum35A8bzAz4e1LqHVxw",
+        "last_login": null,
+        "email": "react@gmail.com",
+        "username": "react",
+        "real_name": "kevin",
+        "biography": "bio",
+        "is_admin": false,
+        "is_active": false,
+        "is_staff": false,
+        "is_superuser": false,
+        "profile_image": "",
+        "interests": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.userprofileinfo",
+    "pk": 4,
+    "fields": {
+        "password": "argon2$argon2i$v=19$m=512,t=2,p=2$a2tOU0Npc1NENkxY$iVTJOYklnoNY5qVh1k4pxQ",
+        "last_login": null,
+        "email": "postgres@gmail.com",
+        "username": "postgres",
+        "real_name": "kevin",
+        "biography": "bio",
+        "is_admin": false,
+        "is_active": false,
+        "is_staff": false,
+        "is_superuser": false,
+        "profile_image": "",
+        "interests": [
+            2
+        ]
+    }
+},
+{
+    "model": "accounts.userprofileinfo",
+    "pk": 5,
+    "fields": {
+        "password": "argon2$argon2i$v=19$m=512,t=2,p=2$YXk1c2g1RTVzSDBE$ZDGYgKiDegU0Lajdy0Gmdg",
+        "last_login": null,
+        "email": "random@gmail.com",
+        "username": "randomuser",
+        "real_name": "kevin",
+        "biography": "bio",
+        "is_admin": false,
+        "is_active": false,
+        "is_staff": false,
+        "is_superuser": false,
+        "profile_image": "",
+        "interests": [
+            2
+        ]
+    }
+},
+{
+    "model": "accounts.userprofileinfo",
+    "pk": 6,
+    "fields": {
+        "password": "argon2$argon2i$v=19$m=512,t=2,p=2$MFFUY0tmUFFFU0lY$XG7ELkGSxgf4BFMfUSKPIg",
+        "last_login": null,
+        "email": "active@gmail.com",
+        "username": "activeuser",
+        "real_name": "kevin",
+        "biography": "bio",
+        "is_admin": false,
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "profile_image": "",
+        "interests": [
+            2
+        ]
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 1,
+    "fields": {
+        "role": "SI",
+        "interest_name": "pizza",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 1,
+        "level": 0
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 2,
+    "fields": {
+        "role": "SI",
+        "interest_name": "pizza",
+        "parent": null,
+        "lft": 1,
+        "rght": 6,
+        "tree_id": 2,
+        "level": 0
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 3,
+    "fields": {
+        "role": "SI",
+        "interest_name": "cooking",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 3,
+        "level": 0
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 4,
+    "fields": {
+        "role": "SI",
+        "interest_name": "pasta",
+        "parent": 2,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 5,
+    "fields": {
+        "role": "SI",
+        "interest_name": "pasta",
+        "parent": 2,
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 6,
+    "fields": {
+        "role": "MI",
+        "interest_name": "Sports",
+        "parent": null,
+        "lft": 1,
+        "rght": 4,
+        "tree_id": 4,
+        "level": 0
+    }
+},
+{
+    "model": "accounts.interests",
+    "pk": 7,
+    "fields": {
+        "role": "SI",
+        "interest_name": "Soccer",
+        "parent": 6,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 1,
+    "fields": {
+        "interest_tag_name": "programming",
+        "user": null
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 2,
+    "fields": {
+        "interest_tag_name": "",
+        "user": null
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 3,
+    "fields": {
+        "interest_tag_name": "running",
+        "user": null
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 4,
+    "fields": {
+        "interest_tag_name": "running",
+        "user": null
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 5,
+    "fields": {
+        "interest_tag_name": "soccer",
+        "user": null
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 6,
+    "fields": {
+        "interest_tag_name": "soccer",
+        "user": [
+            "mmeknoll@gmail.com"
+        ]
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 9,
+    "fields": {
+        "interest_tag_name": "bas",
+        "user": [
+            "mmeknoll@gmail.com"
+        ]
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 10,
+    "fields": {
+        "interest_tag_name": "sdfsdf",
+        "user": [
+            "mmeknoll@gmail.com"
+        ]
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 11,
+    "fields": {
+        "interest_tag_name": "bas",
+        "user": [
+            "mmeknoll@gmail.com"
+        ]
+    }
+},
+{
+    "model": "accounts.interesttags",
+    "pk": 12,
+    "fields": {
+        "interest_tag_name": "sdfsdf",
+        "user": [
+            "mmeknoll@gmail.com"
+        ]
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "d2a98eaa056dc70e4c1ff2503fa459baa39e4a60",
+    "fields": {
+        "user": [
+            "mmeknoll@gmail.com"
+        ],
+        "created": "2021-05-30T05:59:19.008Z"
+    }
+}
+]

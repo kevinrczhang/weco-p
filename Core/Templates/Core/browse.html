@@ -1,0 +1,35 @@
+{% extends "Core/base.html" %}
+{% block body_block %}
+ 
+<div class="container">
+    <div class="jumbotron">
+      <h1>Browse</h1>
+    </div>
+    <div class="sort">
+      <form method="get">
+          <label for="interests">Select Interest: </label>
+          <select name="interests" id="interests" onchange="location = this.value;">
+              <option value="#">
+                  -----
+              </option>
+              {% for interest in interest_list %}
+              <option value="{% url 'accounts:user_interest_sort' pk=interest.id %}">
+                  {{interest.interest_name}}
+              </option>
+              {% endfor %}
+              <option value="/accounts/browse">
+                  All
+              </option>
+          </select>
+      </form>
+  </div>
+    <h2>Users: </h2>
+    
+    {% for UserProfileInfo in usernames %}
+        {{ UserProfileInfo.username }}
+        <br></br>
+    {% endfor %}
+
+  </div>
+
+{% endblock %}

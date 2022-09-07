@@ -1,0 +1,23 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+<div class="centerstage">
+
+    {% for post in home_post_list %}
+        {if post.category in user_interests and post.category is not null %}
+            <div class="post">
+                <h1><a href="{% url 'posts:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                <div class="date">
+                    <p>Published on: {{ post.published_date|date:"D M Y"}}</p>
+                </div>
+                {% if post.category %}
+                    <div class="category">
+                        {{ post.category }}
+                    </div>
+                {% endif %}
+                <a href="{% url 'posts:post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

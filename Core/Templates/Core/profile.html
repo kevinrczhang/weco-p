@@ -1,0 +1,21 @@
+{% extends "Core/base.html" %}
+{% block title %} Profile {% endblock %}
+{% block body_block %}
+{% load static %}
+<div class="container">
+    <div class="jumbotron">
+   
+      <h1>{{ user.username }}'s Profile</h1>
+      <h2>Nickname: </h2>
+      <h2>Name: </h2>
+      <h2>Text: </h2>
+      <h2>Pfp - {{ icon.name }}</h2>
+      <img scr ="{{ icon.icon_image.url }}" alt="default.png" width="250" height="250">
+     
+    
+      <a class = "btn btn-primary" href="{% url 'accounts:image_upload' %}">Update Profile</a>
+    
+    </div>
+  </div>
+
+{% endblock %}

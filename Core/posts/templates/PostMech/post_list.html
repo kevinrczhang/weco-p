@@ -1,0 +1,42 @@
+{% extends 'posts/base.html' %}
+
+{% block content %}
+<div class="centerstage">
+
+    {# Sort Blog Posts#}
+    <div class="sort">
+        <form method="get">
+            <label for="category">Select Category: </label>
+            <select name="category" id="category" onchange="location = this.value;">
+                <option value="#">
+                    -----
+                </option>
+                {% for post in categorymptt_list %}
+                <option value="{% url 'posts:category_post_list' pk=post.id %}">
+                    {{post.category_name}}
+                </option>
+                {% endfor %}
+                <option value="/posts/">
+                    All Posts
+                </option>
+            </select>
+        </form>
+    </div>
+
+    {% for post in post_list %}
+        <div class="post">
+
+            <h1><a href="{% url 'posts:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div class="date">
+                <p>Published on: {{ post.published_date|date:"D M Y"}}</p>
+            </div>
+            {% if post.category %}
+                <div class="category">
+                    {{ post.category }}
+                </div>
+            {% endif %}
+            <a href="{% url 'posts:post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

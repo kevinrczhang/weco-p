@@ -1,0 +1,17 @@
+{% extends "Core/base.html" %}
+{% block title %} Profile {% endblock %}
+{% block body_block %}
+{% load static %}
+<div class="container">
+    <div class="jumbotron">
+   
+      <h2>Nickname: </h2>
+      <h2>Name: </h2>
+      <h2>Text: </h2>
+      <h2>Pfp - </h2>
+      {{user.username}}
+
+    </div>
+  </div>
+
+{% endblock %}
