@@ -735,7 +735,7 @@ function ProfileSidebar (props) {
           {/**
                      * TODO: Show more data than just follower's username.
                      * Maybe also show their profile picture and a bit of their bio?
-                     * (02/11/2022) Take-Some-Bytes */}
+                     }
           {profile.followers.length > 0
             ? <UserList
               users={profile.followers.map(follower => ({
@@ -757,7 +757,7 @@ function ProfileSidebar (props) {
           <DialogTitle id='following-dialog-title'>Following</DialogTitle>
           {/**
                      * TODO: See above.
-                     * (02/11/2022) Take-Some-Bytes */}
+                      */}
           {profile.following.length > 0
             ? <UserList
               users={profile.following.map(following => ({
@@ -829,7 +829,7 @@ function ProfilePostListItem (props) {
     /**
      * TODO: Make tooltip show only *some* post text.
      * Right now it tries to show the entire post.
-     * (01/05/2022) Take-Some-Bytes */
+      */
     <Tooltip key={post.id} title={post.text} placement='bottom' leavedelay={500} interactive arrow>
       <ImageListItem
         onClick={e => PostDetailRedirect(post.id)}
@@ -847,7 +847,7 @@ function ProfilePostListItem (props) {
           )}
           /**
            * TODO: Show author's name, not ID.
-           * (01/05/2022) Take-Some-Bytes */
+           */
           subtitle={<span>Posted {post.publishedDate} by {post.author}</span>}
           actionIcon={
             <div onClick={e => e.stopPropagation()}>
@@ -1029,7 +1029,7 @@ export default function UserProfile (props) {
     /**
      * XXX: DO NOT CHANGE THE ORDER OF THIS ARRAY.
      * The order matters for subsequent processing
-     * (02/08/2022) Take-Some-Bytes */
+     */
     const requests = [
       fetch(new URL(`/accounts/details/${profileId}`, BASE_URL), FETCH_CONFIG),
       fetchPosts(profileId),
@@ -1075,7 +1075,7 @@ export default function UserProfile (props) {
         /**
          * CONSIDER: Adding some top-level error handling and displaying?
          * We'll need it sooner or later.
-         * (02/05/2022) Take-Some-Bytes */
+          */
       })
   }, [profileId])
   if (!props.currentUserId) {
@@ -1088,7 +1088,7 @@ export default function UserProfile (props) {
       <div className={classes.root} id='user-profile-container'>
         {/**
                  * TODO: Get a proper loading widget
-                 * (02/05/2022) Take-Some-Bytes */}
+                 */}
         <h1>Loading...</h1>
       </div>
     )
